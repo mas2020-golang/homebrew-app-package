@@ -5,20 +5,20 @@
 class AppPackage < Formula
   desc "app-package official Homebrew distribution!"
   homepage "https://github.com/mas2020-golang/app-package"
-  version "0.1.0-rc.6"
+  version "0.1.0-rc.7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mas2020-golang/app-package/releases/download/v0.1.0-rc.6/app-package_v0.1.0-rc.6_Darwin-arm64.tar.gz"
-      sha256 "6ab8d91fe441aac6dcb343bdbf92307dbe5bf46b88d0bd5a87e588fc56a56dad"
+      url "https://github.com/mas2020-golang/app-package/releases/download/v0.1.0-rc.7/app-package_v0.1.0-rc.7_Darwin-arm64.tar.gz"
+      sha256 "7b2cfb8e443b942087c5356554f76560061dfbd8094f49eb065cb2db03e67bc4"
 
       def install
         bin.install "app-package"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mas2020-golang/app-package/releases/download/v0.1.0-rc.6/app-package_v0.1.0-rc.6_Darwin-x86_64.tar.gz"
-      sha256 "c46d0737936eb4568e1b225e618bfc7a910ce9693392512a2b7876d3446c1a62"
+      url "https://github.com/mas2020-golang/app-package/releases/download/v0.1.0-rc.7/app-package_v0.1.0-rc.7_Darwin-x86_64.tar.gz"
+      sha256 "816daebd920082d56d35f0adc553461a998c70d78a5b4382e0d7a6326f651930"
 
       def install
         bin.install "app-package"
@@ -28,16 +28,16 @@ class AppPackage < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mas2020-golang/app-package/releases/download/v0.1.0-rc.6/app-package_v0.1.0-rc.6_Linux-arm64.tar.gz"
-      sha256 "4c327cfbbf909d2967ce8965e757eee6921b663d5902364b2e4aca3432c273f6"
+      url "https://github.com/mas2020-golang/app-package/releases/download/v0.1.0-rc.7/app-package_v0.1.0-rc.7_Linux-arm64.tar.gz"
+      sha256 "6f618a257a728627e016958e2c17eb6db23180ef40b2e52b2f8ffcdbd9b3ab38"
 
       def install
         bin.install "app-package"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mas2020-golang/app-package/releases/download/v0.1.0-rc.6/app-package_v0.1.0-rc.6_Linux-x86_64.tar.gz"
-      sha256 "1cf047ee8cdab97d27b180ee6b2bcf2f828f9a6f3a655d134cabcbaefc7f6438"
+      url "https://github.com/mas2020-golang/app-package/releases/download/v0.1.0-rc.7/app-package_v0.1.0-rc.7_Linux-x86_64.tar.gz"
+      sha256 "5b92ccb6e277e9cf766afe5bfd7a34d25ad0e90cfd8588b1855dcba945f427fe"
 
       def install
         bin.install "app-package"
